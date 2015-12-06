@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="k_means" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wu-oF-SbQ">
+                                <rect key="frame" x="20" y="552" width="134" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Nrh-wp-X3Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="uzc-A3-qoQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="GENERATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nrh-wp-X3Y"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="GenerateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ms6-A9-QDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W84-ZD-1T2">
+                                <rect key="frame" x="162" y="552" width="134" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Awl-Xz-Sro"/>
+                                    <constraint firstAttribute="height" constant="40" id="QV5-TE-oAy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="SELECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Awl-Xz-Sro"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="SelectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKu-At-TuG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3H-1Y-Fw2">
+                                <rect key="frame" x="304" y="552" width="134" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="01N-FQ-MJ4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="srk-rA-Acf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="CLUSTERIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="srk-rA-Acf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ClusteringButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1I-5f-syQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWE-dm-dRd">
+                                <rect key="frame" x="446" y="552" width="134" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Pap-e8-Edd"/>
+                                    <constraint firstAttribute="height" constant="40" id="Y0L-LM-g6W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pap-e8-Edd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANi-kY-jIZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.37647058823529411" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7wu-oF-SbQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="85N-UB-qwA"/>
+                            <constraint firstItem="G3H-1Y-Fw2" firstAttribute="height" secondItem="7wu-oF-SbQ" secondAttribute="height" id="CoL-zh-z6B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWE-dm-dRd" secondAttribute="bottom" constant="8" id="CpY-Kg-UtN"/>
+                            <constraint firstItem="W84-ZD-1T2" firstAttribute="leading" secondItem="7wu-oF-SbQ" secondAttribute="trailing" constant="8" id="P7u-vf-dG8"/>
+                            <constraint firstItem="UWE-dm-dRd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="REk-tc-vS2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7wu-oF-SbQ" secondAttribute="bottom" constant="8" id="XR7-nk-mQs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W84-ZD-1T2" secondAttribute="bottom" constant="8" id="flc-EI-NSI"/>
+                            <constraint firstItem="W84-ZD-1T2" firstAttribute="height" secondItem="7wu-oF-SbQ" secondAttribute="height" id="gpd-Dz-0VO"/>
+                            <constraint firstItem="UWE-dm-dRd" firstAttribute="height" secondItem="7wu-oF-SbQ" secondAttribute="height" id="hd8-yw-I76"/>
+                            <constraint firstItem="G3H-1Y-Fw2" firstAttribute="width" secondItem="7wu-oF-SbQ" secondAttribute="width" id="i6w-VU-A0P"/>
+                            <constraint firstItem="UWE-dm-dRd" firstAttribute="width" secondItem="7wu-oF-SbQ" secondAttribute="width" id="pLm-5c-bkK"/>
+                            <constraint firstItem="UWE-dm-dRd" firstAttribute="leading" secondItem="G3H-1Y-Fw2" secondAttribute="trailing" constant="8" id="pct-1X-Hhb"/>
+                            <constraint firstItem="G3H-1Y-Fw2" firstAttribute="leading" secondItem="W84-ZD-1T2" secondAttribute="trailing" constant="8" id="rw1-9t-LNm"/>
+                            <constraint firstItem="W84-ZD-1T2" firstAttribute="width" secondItem="7wu-oF-SbQ" secondAttribute="width" id="vdu-M6-aES"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G3H-1Y-Fw2" secondAttribute="bottom" constant="8" id="xf4-4u-pDh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ClusteringButton" destination="G3H-1Y-Fw2" id="8D4-aJ-wJp"/>
+                        <outlet property="GenerateButton" destination="7wu-oF-SbQ" id="EiW-kO-AwM"/>
+                        <outlet property="ResetButton" destination="UWE-dm-dRd" id="CpA-v1-vW5"/>
+                        <outlet property="SelectButton" destination="W84-ZD-1T2" id="dgo-ch-GHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="243"/>
+        </scene>
+    </scenes>
+</document>
