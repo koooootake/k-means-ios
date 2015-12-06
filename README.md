@@ -18,3 +18,7 @@ k-meansクラスタリングの結果を出力します  　　
 ###**Reset**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/reset.PNG)  
 データ群をリセットします  　　
+
+##**Requirements**
+iOS 8.0+
+Xcode 7.1
