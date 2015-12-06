@@ -3,6 +3,7 @@ Swiftでk-means（k平均法）クタスタリングをするサンプルプロ�
 
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/k-means.gif)  
 
+##**Usage**
 ###**Generate**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/generate.PNG)  
 データ群をタップで追加することができます  　　
