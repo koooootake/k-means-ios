@@ -15,6 +15,10 @@
 		4693CECD1C135B8E0034328D /* k_meansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CECC1C135B8E0034328D /* k_meansTests.swift */; };
 		4693CED81C135B8E0034328D /* k_meansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CED71C135B8E0034328D /* k_meansUITests.swift */; };
 		4693CEE61C13FCBD0034328D /* k-mean_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4693CEE51C13FCBD0034328D /* k-mean_icon.png */; };
+		4693CEEC1C1402620034328D /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CEE81C1402620034328D /* UIWindow+Swizzle.swift */; };
+		4693CEED1C1402620034328D /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CEE91C1402620034328D /* Visualizer.swift */; };
+		4693CEEE1C1402620034328D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CEEA1C1402620034328D /* Configuration.swift */; };
+		4693CEEF1C1402620034328D /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693CEEB1C1402620034328D /* TouchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4693CED71C135B8E0034328D /* k_meansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = k_meansUITests.swift; sourceTree = "<group>"; };
 		4693CED91C135B8E0034328D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4693CEE51C13FCBD0034328D /* k-mean_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "k-mean_icon.png"; sourceTree = "<group>"; };
+		4693CEE81C1402620034328D /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Swizzle.swift"; sourceTree = "<group>"; };
+		4693CEE91C1402620034328D /* Visualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		4693CEEA1C1402620034328D /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		4693CEEB1C1402620034328D /* TouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,8 @@
 				4693CEBE1C135B8E0034328D /* Assets.xcassets */,
 				4693CEC01C135B8E0034328D /* LaunchScreen.storyboard */,
 				4693CEC31C135B8E0034328D /* Info.plist */,
-				4693CEE51C13FCBD0034328D /* k-mean_icon.png */,
+				4693CEF01C14026D0034328D /* Image */,
+				4693CEE71C1402530034328D /* Touch */,
 			);
 			path = "k-means";
 			sourceTree = "<group>";
@@ -126,6 +135,25 @@
 				4693CED91C135B8E0034328D /* Info.plist */,
 			);
 			path = "k-meansUITests";
+			sourceTree = "<group>";
+		};
+		4693CEE71C1402530034328D /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				4693CEE81C1402620034328D /* UIWindow+Swizzle.swift */,
+				4693CEE91C1402620034328D /* Visualizer.swift */,
+				4693CEEA1C1402620034328D /* Configuration.swift */,
+				4693CEEB1C1402620034328D /* TouchView.swift */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
+		4693CEF01C14026D0034328D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4693CEE51C13FCBD0034328D /* k-mean_icon.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4693CEEC1C1402620034328D /* UIWindow+Swizzle.swift in Sources */,
+				4693CEEE1C1402620034328D /* Configuration.swift in Sources */,
+				4693CEED1C1402620034328D /* Visualizer.swift in Sources */,
 				4693CEBA1C135B8E0034328D /* ViewController.swift in Sources */,
+				4693CEEF1C1402620034328D /* TouchView.swift in Sources */,
 				4693CEB81C135B8E0034328D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +520,7 @@
 				4693CEDE1C135B8E0034328D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4693CEDF1C135B8E0034328D /* Build configuration list for PBXNativeTarget "k-meansTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +529,7 @@
 				4693CEE11C135B8E0034328D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4693CEE21C135B8E0034328D /* Build configuration list for PBXNativeTarget "k-meansUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +538,7 @@
 				4693CEE41C135B8E0034328D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
