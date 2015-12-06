@@ -20,5 +20,5 @@ k-meansクラスタリングの結果を出力します  　　
 データ群をリセットします  　　
 
 ##**Requirements**
-iOS 8.0+
-Xcode 7.1
+iOS 8.0+  
+Xcode 7.1.1  
