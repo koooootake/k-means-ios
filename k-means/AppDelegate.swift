@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //タッチ
-        //var config = Configuration()
-        //config.defaultSize = CGSize(width: 30, height: 30)
-        //Visualizer.start(config)
+        var config = Configuration()
+        config.defaultSize = CGSize(width: 30, height: 30)
+        Visualizer.start(config)
         
         return true
     }

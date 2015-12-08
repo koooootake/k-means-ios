@@ -113,6 +113,7 @@ class ViewController: UIViewController {
             //色リセット
             }else if subview.tag == 100 || subview.tag == 300{
                 subview.backgroundColor = defaultColor
+                subview.tag = 100
             }
         }
 
@@ -308,46 +309,52 @@ class ViewController: UIViewController {
         
         if isSelect{
             
-            ClusteringButton.enabled = true
-            ClusteringButton.alpha = 1.0
-            
-            if let selectView = gesture.view{
+            if gesture.view!.tag == 300{
+                print("重複")
                 
-                switch count{
-                    case 0:
-                        //rgb(239,83,80)赤
-                        //rgb(198,40,40)濃い赤
-                        selectView.backgroundColor = UIColor(red: 198/255.0, green: 40/255.0, blue: 40/255.0, alpha: 1.0)
-                        break
-                    case 1:
-                        //rgb(66,165,245)青
-                        //rgb(21,101,192)濃い青
-                        selectView.backgroundColor = UIColor(red: 21/255.0, green: 101/255.0, blue: 192/255.0, alpha: 1.0)
-                        break
-                    case 2:
-                        //rgb(255,238,88)黄
-                        //rgb(249,168,37)濃い黄
-                        selectView.backgroundColor = UIColor(red: 249/255.0, green: 168/255.0, blue: 37/255.0, alpha: 1.0)
-                        break
-                    case 3:
-                        //rgb(255,167,38)オレンジ
-                        //rgb(239,108,0)濃いオレンジ
-                        selectView.backgroundColor = UIColor(red: 239/255.0, green: 108/255.0, blue: 0/255.0, alpha: 1.0)
-                        
-                        break
-                    case 4:
-                        //rgb(126,87,194)むらさき
-                        //rgb(69,39,160)濃いむらさき
-                        selectView.backgroundColor = UIColor(red: 69/255.0, green: 39/255.0, blue: 160/255.0, alpha: 1.0)
-                        break
-                    default:
-                        selectView.backgroundColor = defaultColor
-                        break
+            }else{
+                
+                ClusteringButton.enabled = true
+                ClusteringButton.alpha = 1.0
+            
+                if let selectView = gesture.view{
+                    
+                    switch count{
+                        case 0:
+                            //rgb(239,83,80)赤
+                            //rgb(198,40,40)濃い赤
+                            selectView.backgroundColor = UIColor(red: 198/255.0, green: 40/255.0, blue: 40/255.0, alpha: 1.0)
+                            break
+                        case 1:
+                            //rgb(66,165,245)青
+                            //rgb(21,101,192)濃い青
+                            selectView.backgroundColor = UIColor(red: 21/255.0, green: 101/255.0, blue: 192/255.0, alpha: 1.0)
+                            break
+                        case 2:
+                            //rgb(255,238,88)黄
+                            //rgb(249,168,37)濃い黄
+                            selectView.backgroundColor = UIColor(red: 249/255.0, green: 168/255.0, blue: 37/255.0, alpha: 1.0)
+                            break
+                        case 3:
+                            //rgb(255,167,38)オレンジ
+                            //rgb(239,108,0)濃いオレンジ
+                            selectView.backgroundColor = UIColor(red: 239/255.0, green: 108/255.0, blue: 0/255.0, alpha: 1.0)
+                            
+                            break
+                        case 4:
+                            //rgb(126,87,194)むらさき
+                            //rgb(69,39,160)濃いむらさき
+                            selectView.backgroundColor = UIColor(red: 69/255.0, green: 39/255.0, blue: 160/255.0, alpha: 1.0)
+                            break
+                        default:
+                            selectView.backgroundColor = defaultColor
+                            break
+                    }
+                    selectView.tag = 300//初期点
+                    //配列に追加
+                    pointInitialClusters.append([Double(selectView.frame.origin.x),Double(selectView.frame.origin.y)])
+                    count++
                 }
-                selectView.tag = 300//初期点
-                //配列に追加
-                pointInitialClusters.append([Double(selectView.frame.origin.x),Double(selectView.frame.origin.y)])
-                count++
             }
         }
         
