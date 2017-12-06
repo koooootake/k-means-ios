@@ -3,23 +3,23 @@ Swiftでk-means（k平均法）クタスタリングをするサンプルプロ�
 
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/k-means.gif)  
 
-##**Usage**
-###**Generate**
+## **Usage**
+### **Generate**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/generate.PNG)  
 データ群をタップで追加することができます  　　
 
-###**Select**
+### **Select**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/select.PNG)  
 初期重心をタップで選択することができます  　　
 
-###**Clustering**
+### **Clustering**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/clustering.PNG)  
 k-meansクラスタリングの結果を出力します  　　
 
-###**Reset**
+### **Reset**
 ![k-means](https://github.com/koooootake/k-means/blob/master/ScreenShot/reset.PNG)  
 データ群をリセットします  　　
 
-##**Requirements**
+## **Requirements**
 iOS 8.0+  
 Xcode 7.1.1  
